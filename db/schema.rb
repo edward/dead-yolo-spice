@@ -11,9 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130813213011) do
+ActiveRecord::Schema.define(version: 20130814201630) do
 
   create_table "magazines", force: true do |t|
+    t.string   "status"
     t.string   "title"
     t.string   "payment"
     t.string   "magazineformat"
@@ -31,6 +32,7 @@ ActiveRecord::Schema.define(version: 20130813213011) do
     t.string   "city_name"
     t.string   "province_name"
     t.string   "country_name"
+    t.string   "postal_code"
   end
 
 end
